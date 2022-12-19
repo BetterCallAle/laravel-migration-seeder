@@ -10,7 +10,6 @@ class HomeController extends Controller
 {
     public function index(){
         $trains = Train::whereDate('departure_time', date('Y-m-d'))->get();
-        dd($trains);
-        return view('home.index');
+        return view('home.index', compact('trains'));
     }
 }
