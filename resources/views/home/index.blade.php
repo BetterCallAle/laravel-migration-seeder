@@ -6,7 +6,7 @@
     <section class="py-5">
         <div class="container">
             <h2 class="mb-4">I treni di oggi {{ date('d-m-Y') }}:</h2>
-            <div class="row row-cols-3"> 
+            <div class="row row-cols-3 gy-3"> 
                 @forelse ($trains as $train)
                     @include('partials.home-cards')
                 @empty
